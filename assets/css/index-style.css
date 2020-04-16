@@ -1,0 +1,30 @@
+.project-name {
+    white-space: nowrap;
+}
+
+.description {
+    min-height: 7rem;
+    text-align: center;
+}
+
+.image.main {
+    margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #fff;
+}
+
+.carousel-indicators .active {
+    width: 0.6875rem;
+    height: 0.6875rem;
+}
+
+.image.fit {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DFDFDF;
+}

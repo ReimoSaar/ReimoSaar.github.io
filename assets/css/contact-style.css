@@ -1,0 +1,61 @@
+.ohnohoney {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
+.alert-anim {
+  animation: fadein 6s linear forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+  }
+  6% {
+    opacity: 0;
+    padding: 15px;
+    margin-bottom: 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 100%;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 0;
+    padding: 15px;
+    margin-bottom: 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 100%;
+  }
+  100% {
+    opacity: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 0px;
+  }
+}
+
+#message {
+  resize: none;
+}
+
+form > .fields {
+  margin-bottom: 1.3rem;
+}

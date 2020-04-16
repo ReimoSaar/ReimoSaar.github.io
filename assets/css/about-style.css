@@ -1,0 +1,14 @@
+#main > .post {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#cv-link {
+    color: blue;
+}
+
+header.major {
+    margin-bottom: 3rem;
+}
