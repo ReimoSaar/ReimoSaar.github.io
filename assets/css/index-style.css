@@ -1,0 +1,12 @@
+.project-name {
+    white-space: nowrap;
+}
+
+.description {
+    height: 100px;
+    text-align: center;
+}
+
+.image.main {
+    margin-bottom: 0;
+}
