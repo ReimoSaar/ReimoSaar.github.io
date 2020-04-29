@@ -7,7 +7,9 @@
 
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-      verifyRecaptcha.style.display = "block";
+      form.removeChild(verifyRecaptcha);
+      form.insertBefore(verifyRecaptcha, form.children[2]);
+      verifyRecaptcha.classList.add("alert-anim");
       return false;
     }
 
