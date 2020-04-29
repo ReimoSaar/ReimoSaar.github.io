@@ -7,3 +7,14 @@
     width: 0;
     z-index: -1;
 }
+
+.verify_recaptcha {
+    animation: fadein 8s linear forwards;
+}
+  
+  @keyframes fadein {
+    0% { opacity:0; }
+    10% { opacity:1; }
+    90% { opacity:1; }
+    100% { opacity:0; }
+  }

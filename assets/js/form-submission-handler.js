@@ -3,10 +3,11 @@
   function getFormData(form) {
     var elements = form.elements;
     var honeypot;
+    var verifyRecaptcha = form.querySelector(".verify_recaptcha");
 
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-      document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+      verifyRecaptcha.style.display = "block";
       return false;
     }
 
