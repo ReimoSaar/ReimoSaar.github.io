@@ -9,10 +9,10 @@
 }
 
 .alert-anim {
-  animation: fadein 6s linear forwards;
+  animation: fadeinout 6s linear forwards;
 }
 
-@keyframes fadein {
+@keyframes fadeinout {
   0% {
     opacity: 0;
     padding: 0px;

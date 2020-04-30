@@ -10,3 +10,18 @@
 .image.main {
     margin-bottom: 0;
 }
+
+.game-description {
+    overflow: hidden;
+    animation: expand 6s linear forwards;
+    display: block;
+  }
+  
+  @keyframes expand {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 100px;
+    }
+  }
