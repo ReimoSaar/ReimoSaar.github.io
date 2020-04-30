@@ -12,15 +12,6 @@
   animation: fadein 6s linear forwards;
 }
 
-.verify_recaptcha {
-  opacity: 0;
-    padding: 0px;
-    margin-bottom: 0px;
-    border: 0px;
-    border-radius: 0px;
-    font-size: 0px;
-}
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -32,7 +23,7 @@
   6% {
     opacity: 0;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
     border: 1px solid transparent;
     border-radius: 4px;
     font-size: 100%;
@@ -46,13 +37,25 @@
   94% {
     opacity: 0;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
     border: 1px solid transparent;
     border-radius: 4px;
     font-size: 100%;
+  }
+  100% {
+    opacity: 0;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 0px;
   }
 }
 
 #message {
   resize: none;
+}
+
+form > .fields {
+  margin-bottom: 1.3rem;
 }

@@ -48,28 +48,20 @@
 					<div class="fields">
 						<div class="field">
 							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" id="name" required/>
 						</div>
 						<div class="field">
 							<label for="mail">Email</label>
-							<input type="text" name="mail" id="email" />
+							<input type="text" name="mail" id="email" required/>
 						</div>
 						<div class="field">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
+							<textarea name="message" id="message" rows="3" required></textarea>
 						</div>
 						<div class="g-recaptcha field" data-sitekey="6LeIRe0UAAAAAF4OwDa6uZtwfxQaJd8hkEJwzYAl"></div>
 						<br>
 						<!-- H o n e y p o t -->
 						<input type="text" name="email" class="ohnohoney">
-					</div>
-					<div class="alert alert-danger verify_recaptcha">
-						You need to verify reCAPTCHA!
-					</div>
-					<div style="display:none" class="thankyou_message">
-						<!-- You can customize the thankyou message by editing the code below -->
-						<h2><em>Thanks</em> for contacting us! We will get back to you soon!
-						</h2>
 					</div>
 					<ul class="actions">
 						<li><input type="submit" value="Send Message" /></li>

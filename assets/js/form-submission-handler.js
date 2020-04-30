@@ -3,13 +3,15 @@
   function getFormData(form) {
     var elements = form.elements;
     var honeypot;
-    var verifyRecaptcha = form.querySelector(".verify_recaptcha");
-
+    if (form.querySelector(".alert") != null) {
+      form.removeChild(form.querySelector(".alert"));
+    }
+    alertDiv = document.createElement("div");
+    form.insertBefore(alertDiv, form.children[1]);
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-      form.removeChild(verifyRecaptcha);
-      form.insertBefore(verifyRecaptcha, form.children[2]);
-      verifyRecaptcha.classList.add("alert-anim");
+      alertDiv.className += " alert alert-anim alert-danger";
+      alertDiv.innerHTML = 'You need to verify reCAPTCHA!';
       return false;
     }
 
@@ -83,10 +85,8 @@
         if (formElements) {
           formElements.style.display = "none"; // hide form
         }
-        var thankYouMessage = form.querySelector(".thankyou_message");
-        if (thankYouMessage) {
-          thankYouMessage.style.display = "block";
-        }
+        alertDiv.className += " alert alert-anim alert-success";
+        alertDiv.innerHTML = 'Message has been sent successfully!';
       }
     };
     // url encode form data for sending as post data
